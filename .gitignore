@@ -14,3 +14,4 @@ mnist
 *.png
 *.csv
 *.wav
+*.zip
