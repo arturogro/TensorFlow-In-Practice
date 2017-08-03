@@ -16,7 +16,7 @@ Tensorflow In Practice is a collection of popular machine learning problems with
 Before running the examples you should download the datasets with the following command:
 
 ```python
-python install-datasets.py
+python download-datasets.py
 ```
   
 
