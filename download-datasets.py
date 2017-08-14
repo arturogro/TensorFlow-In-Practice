@@ -4,12 +4,14 @@ import sys
 DEMAND_FORECAST = "demand-forecast"
 FRAUD_PREVENTION = "fraud-prevention"
 HEARTBEAT_CLASSIFIER = "heartbeat-classifier"
+BREAST_CANCER_PREDICTION = "breast-cancer-prediction"
 
 demandForecastURL = "http://download782.mediafire.com/w7ujcex6lwrg/znhjtbd1rc1qz2f/inventory-demand.zip"
 fraudPreventionURL = "http://download1643.mediafireuserdownload.com/fe6968gavypg/axsdfq24d7bn26n/creditcardfraud.zip"
 heartbeatClassifierURL = "http://download837.mediafire.com/1fcscizx4ygg/dwf9ph4bhx8jhdx/heartbeat-sounds.zip"
+breastCancerPredictionURL = "http://www.mediafire.com/file/x2hi93a6lulx4dy/breast-cancer-wisconsin-data.zip"
 
-tutorialURLs = { DEMAND_FORECAST : demandForecastURL, FRAUD_PREVENTION : fraudPreventionURL, HEARTBEAT_CLASSIFIER : heartbeatClassifierURL}
+tutorialURLs = { DEMAND_FORECAST : demandForecastURL, FRAUD_PREVENTION : fraudPreventionURL, HEARTBEAT_CLASSIFIER : heartbeatClassifierURL, BREAST_CANCER_PREDICTION : breastCancerPredictionURL}
 
 for tutorialName in tutorialURLs:
     url = tutorialURLs[tutorialName]
@@ -39,4 +41,7 @@ for tutorialName in tutorialURLs:
         zipDocument.extractall(filenamePath)
     elif tutorialName == HEARTBEAT_CLASSIFIER:
         filenamePath = "./clustering/" + HEARTBEAT_CLASSIFIER + "/dataset" 
+        zipDocument.extractall(filenamePath)
+    elif tutorialName == BREAST_CANCER_PREDICTION:
+        filenamePath = "./neural-networks/" + BREAST_CANCER_PREDICTION + "/dataset" 
         zipDocument.extractall(filenamePath)
