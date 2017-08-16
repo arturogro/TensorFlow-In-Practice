@@ -32,6 +32,11 @@ Tensorflow In Practice is a collection of popular machine learning problems with
   $ tutorial-name/dataset/
 ```
 
+3. Run your notebook:
+
+```
+  $ jupyter notebook
+```
 
   
 
